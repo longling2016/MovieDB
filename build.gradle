@@ -1,0 +1,18 @@
+group 'hw3'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+    mavenCentral()
+}
+
+dependencies {
+    compile files('libs/ojdbc7.jar')
+}
